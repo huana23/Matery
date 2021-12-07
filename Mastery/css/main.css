@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Oswald', sans-serif;
+}
+.clear{
+    clear: both;
+}
+/* header */
+header{
+    background-color: white;
+    padding: 10px 50px;
+    width: 80%;
+    margin: auto;
+}
+header .logo{
+    display: inline-flex;
+    align-items: center;
+}
+.logo a{
+    background-color: rgb(0,33,77);
+    padding: 11px 12px;
+    border-radius: 21px;
+}
+.logo a i{
+    color: rgb(184, 154, 27);
+}
+.logo h1{
+    margin-left: 10px;
+    font-size: 35px;
+}
+header ul{
+    list-style: none;
+}
+header ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 550;
+}
+header ul li{
+    display: inline;
+/* box model : mô hình thể hiện các thành phần của 1 thẻ  vd:boder;margin,padding;content*/
+    margin-right: 25px;
+}
+.navbar{
+    margin: 20px;
+}
+/* carousel */
+.carousel{
+    background-image: url(../img/images/2.jpg);
+    height: 650px;
+    background-position: top;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+/* welcome  */
+.welcome {
+    display: flex;
+    width: 80%; 
+    margin: auto;
+}
+.welcome__left h1{
+    font-size: 33px;
+    font-weight: 700;
+}
+.welcome__left p{
+    padding-right: 60px;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(158, 158, 158);
+    margin-top: 20px;
+}
+.welcome__left button{
+    padding: 15px 35px;
+    background-color: rgb(253, 200, 0);
+    border: 1px;
+    margin-top: 30px;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.welcome__left button:hover{
+    color: rgb(253, 200, 0);
+    background-color: black;
+}
+.welcome__right img{
+    height: 400px;
+}
+/* number */
+.number{
+    background-color: rgb(246, 246, 246);
+    margin: 50px 0px;
+}
+.number1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.number__item{
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+}
+.number__item--left h1{
+    font-size: 60px;
+}
+.number__item--left{
+    margin-right: 20px;
+}
+.number__item--right p{
+    font-size: 17px;
+    font-weight: 600;
+}
+/* functions */
+.functions{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.functions__item{
+    background-color: rgb(0, 33, 70);
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin: 30px 0px;
+    padding: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.functions__item i{
+    font-size: 55px;
+}
+.functions__item p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* events */
+.events{
+    background-color: rgb(246, 246, 246);
+}
+.events1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 70px
+}
+.events__left h1,
+.events__right h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.events__left{
+    margin-right: 30px;
+    text-align: right;
+}
+.events__right{
+    margin-left: 30px;
+    text-align: right;
+}
+.service__item{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    text-align: left;
+}
+.events__left--service{
+    margin-bottom: 70px;
+}
+.service__item--img{
+    width: 40%;
+}
+.service__item--img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.service__item--text{
+    margin-left: 20px;
+}
+.service__item--text h3{
+    margin-bottom: 5px;
+}
+.service__item--text p:nth-of-type(1){
+    margin-bottom: 5px;
+    color: rgb(209, 209, 209);
+}
+.service__item--text p:nth-of-type(2){
+    color: rgb(129, 129, 129);
+}
+.events__left--service button,
+.events__right button{
+    padding: 15px 40px;
+    margin-top: 30px;
+    background-color: rgb(253, 200, 0);
+    color: black;
+    border: rgb(253, 200, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.events__left--service button:hover,
+.events__right button:hover{
+    background-color: black;
+    color: rgb(253, 200, 0);
+    cursor: pointer;
+}
+.events__right--calendar{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+.calendar__right--top{
+    background-color: rgb(253, 200, 0);
+    padding: 15px 25px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.calendar__right--top h3{
+    font-size: 30px;
+}
+.calendar__right--top p{
+    font-size: 17px;
+}
+.calendar__right--bottom{
+    background-color: rgb(0, 33, 70);
+    padding: 7px 0px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+.calendar__left{
+    margin-left: 30px;
+    text-align: left;
+}
+.calendar__left h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.calendar__left p{
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    color: rgb(189 , 189, 189);
+}
+.calendar__left--bottom{
+    display: flex;
+}
+.calendar__left--bottom-hour h4{
+    padding-right: 15px;
+    color: rgb(145, 159, 175);
+}
+.calendar__left--bottom-location h4{
+    border-left: 1px solid;
+    padding-left: 15px;
+    color: rgb(145, 159, 175);
+}
+/* footer */
+footer{
+    background-color: rgb(0, 33, 70);
+}
+.footer__content{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+    color: white;
+    border-bottom: 2px solid rgb(33, 48, 65);
+}
+.footer__content-1{
+    width: 40%;
+}
+.footer__content-1 h3,
+.footer__content-2 h3,
+.footer__content-3 h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.footer__content-1 a,
+.footer__content-2 a,
+.footer__content-3 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.footer__content-1 a:hover,
+.footer__content-2 a:hover,
+.footer__content-3 a:hover{
+    color: #a87b7b;
+}
+.footer__content-2{
+    width: 30%;
+}
+.footer__content-3{
+    width: 30%;
+}
+footer p{
+    color: white;
+    margin: auto;
+    width: 80%;
+    margin-top: 35px;
+    font-size: 17px;
+    padding-bottom: 50px;
+}
